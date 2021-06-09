@@ -28,6 +28,10 @@ function App(){
     <div className = "App">
       <input type="text"/>
       <input type = "file" multiple onChange ={(e)=>{
+        console.log("estoy empezando")
+        console.log(e.currentTarget.src)
+        console.log("estoy termina")
+
         converterBase64(e.target.files)
         
         }}/>

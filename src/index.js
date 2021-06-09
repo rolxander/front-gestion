@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import App from './App';
+import App from './App';
 import SearchWidtget from './components/search_widtget'
 import Search from './components/search'
 import ContentSearch from './components/ContentSearch'

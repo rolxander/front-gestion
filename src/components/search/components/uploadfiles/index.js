@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import Modal from '../../../modal';
+import FormUpload from './formupload'
 const Container = styled.div`
     padding: 0.7em;
     width:0.em;
@@ -15,14 +16,14 @@ const Container = styled.div`
     }
     
 `
+
 const UploadFIles = () =>{
     const [modalState,setModalState] = useState(false);
     return(
         <>
-            {modalState&&(<Modal title = "Subir Archivo">
-                <div>
-                    <input/>
-                </div>
+            {modalState&&(
+            <Modal title = "Subir Archivo">
+               <FormUpload/>
             </Modal>)}
             <Container onClick={()=>{
                 setModalState(!modalState)

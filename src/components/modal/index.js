@@ -13,7 +13,6 @@ const Container = styled.div`
     align-items: center;
     z-index:1;
     
-    
 `;
 const WindowModal = styled.div`
     background-color: #ddddd0;
@@ -48,13 +47,14 @@ const WindowTitleModal = styled.div`
     display:flex;
     justify-content: center;
     align-items: center;
+    font-weight: 400;
+    
+
 `
-
+const WindowBodyModal = styled.div`
+    grid-area : body;
+`
 const Modal = ({state,title,children})=>{
-    console.log("estoy aqui")
-    console.log(children)
-    console.log("estoy aqui")
-
     return(
     <Container>
         <WindowModal>
@@ -62,7 +62,9 @@ const Modal = ({state,title,children})=>{
             <WindowTitleModal>
                 {title}
             </WindowTitleModal>
-            {children}
+            <WindowBodyModal>
+                {children}
+            </WindowBodyModal>
         </WindowModal>
     </Container>)
 }

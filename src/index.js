@@ -12,8 +12,16 @@ const GlobalStyle = createGlobalStyle`
   margin:0;
   background-color: #222;
   color: #DDD;
+  box-sizing: border-box;
   }
+:root{
+  --first-color:#1a73e8;
+  --input-color:#80868b;   
+  --boder-color:#DADCE0;
+  --body-font:'Roboto',sans-serif;
 
+
+}
 `
 ReactDOM.render( 
   <React.StrictMode>

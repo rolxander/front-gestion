@@ -1,0 +1,33 @@
+.input_dinamic{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    outline: none;
+    background-color: none;
+    border: 1px solid #80868b;
+    z-index: 1;
+
+}
+.input_dinamic:focus + label{
+    top:-.8rem;
+    left: 0;
+    color: #1a73e8;
+    font-size: 0.7rem;
+    font-weight: 500;
+    z-index: 10;
+}
+
+/*.input_dinamic:not(:placeholder-shown).input_dinamic:not(:focus) + label  {
+    top:-.8rem;
+    left: -.1rem;
+    color: #1a73e8;
+    font-size: 0.7rem;
+    font-weight: 500;
+    z-index: 10;
+}*/
+.input_dinamic:focus{
+    border: 1.5px solid #1a73e8;
+}
